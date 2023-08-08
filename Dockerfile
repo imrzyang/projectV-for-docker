@@ -14,8 +14,9 @@ ENV TROJAN_WSPATH /imrzyangpatht
 
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 COPY nginx.conf /etc/nginx/nginx.conf
+COPY keepalive_exec /root/keepalive_exec
 
-RUN mkdir /etc/v2ray /usr/local/v2ray
+RUN mkdir /etc/v2ray /usr/local/v2ray && chmod a+x /root/keepalive_exec
 COPY config.json /etc/v2ray/
 COPY entrypoint.sh /usr/local/v2ray/
 
