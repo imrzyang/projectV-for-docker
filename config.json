@@ -37,7 +37,35 @@
 					"path": "VLESS_WSPATH"
 				}
 			}
-		}
+		},
+        {
+            "port": 30000,
+            "listen": "127.0.0.1",
+            "protocol": "trojan",
+            "settings": {
+                "clients": [
+                    {
+                        "password": "TROJAN_PASSWORD"
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "ws",
+                "security": "none",
+                "wsSettings": {
+                    "path": "TROJAN_WSPATH"
+                }
+            },
+            "sniffing": {
+                "enabled": true,
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "metadataOnly": false
+            }
+        }
 	],
 	"outbounds": [{
 		"protocol": "freedom",
