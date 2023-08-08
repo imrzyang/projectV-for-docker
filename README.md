@@ -26,13 +26,15 @@ ENV UUID de04add9-5c68-8bab-950c-08cd5320df18
 ENV VMESS_WSPATH /vmess
 ENV VLESS_WSPATH /vless
 </code></pre>
-
 <p>2、客户端配置</p>
 <p>节点客户端配置需要手动进行，下面以 V2rayN 为例。
 <p>下图为 VMess 配置示意图，请修改标示内容，其他设置与图片中显示一致。</p>
 <img src="https://www.hicairo.com/zb_users/upload/2022/12/202212291672276258394161.webp">
 <p>下图为 VLess 配置示意图，请修改标示内容，其他设置与图片中显示一致。</p>
 <img src="https://www.hicairo.com/zb_users/upload/2022/12/202212291672276274474231.webp">
+
+# 保活：
+如需要保活，请在平台为容器配置名为`KEEPALIVE_URL`的标准https协议url和整数型`KEEPALIVE_INTERVAL`（请求频率，可缺省，默认5秒一次）的环境变量。
 
 # 反馈与交流：
 <p>在使用过程中，如果遇到问题，请使用Telegram与我联系。（ https://t.me/HiaiFeng ）</p>
