@@ -7,7 +7,7 @@ RUN apk update && apk add --no-cache supervisor wget unzip curl
 
 # 定义 UUID 及 伪装路径,请自行修改.(注意:伪装路径以 / 符号开始,为避免不必要的麻烦,请不要使用特殊符号.)
 ENV UUID 7954b7ec-d328-4035-983f-4ff2191d3b6e
-ENV TROJAN_PASSWORD imrzyang_trojanpassword
+ENV TROJAN_PASSWORD imrzyangtrojanpassword
 ENV VMESS_WSPATH /imrzyangpathm
 ENV VLESS_WSPATH /imrzyangpathl
 ENV TROJAN_WSPATH /imrzyangpatht
